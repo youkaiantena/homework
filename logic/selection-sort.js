@@ -1,35 +1,35 @@
 var Sort = (function(){
   /**
-   * 第1引数と第2引数を比較し、第2引数が大きい場合にtrueを返す
+   * descとは、第1引数と第2引数を比較した際、第2引数が大きい事である
    *
    * @param int value
    * @param int other
    * @return boolean
    */
-  function isHigh(value, other){
+  function desc(value, other){
     return (value < other);
   }
 
   /**
-   * 第1引数と第2引数を比較し、第2引数が小さい場合にtrueを返す
+   * ascとは、第1引数と第2引数を比較した際、第2引数が小さい事である
    *
    * @param int value
    * @param int other
    * @return boolean
    */
-  function isLow(value, other){
+  function asc(value, other){
     return (other < value);
   }
 
   /**
-   * 渡された条件により、単純選択法による並び替えを行い、並び替えた後の配列を返す
+   * selectionSortとは、単純選択法による並び替えを行う事である
    *
    * @param array data
    * @param callback predicate
    * @return array
    */
-  function sort(data, predicate){
-    var copy    = data.concat();
+  function selectionSort(data, predicate){
+    var copy = data.concat();
 
     copy.forEach(function(value, index, _copy){
       _copy.forEach(function(_value, _index){
@@ -47,10 +47,10 @@ var Sort = (function(){
 
   var Sort = {
     asc: function(data){
-      return sort(data, isLow);
+      return selectionSort(data, asc);
     },
     desc: function(data){
-      return sort(data, isHigh);
+      return selectionSort(data, desc);
     }
   };
 
