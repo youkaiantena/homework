@@ -1,3 +1,3 @@
 # selection-sort
 
-http://jsdo.it/youkaiantena/joxM
+$ node selection-sort.js
