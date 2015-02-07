@@ -1,0 +1,29 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "http://jsdo.it/youkaiantena/joxM",
+  "main": "index.js",
+  "dependencies": {
+    "espower-loader": "^0.10.0",
+    "gulp-espower": "^0.10.0",
+    "gulp": "^3.8.10",
+    "intelli-espower-loader": "^0.6.0",
+    "power-assert": "^0.10.1"
+  },
+  "devDependencies": {
+    "espower-loader": "^0.10.0",
+    "gulp": "^3.8.10",
+    "gulp-espower": "^0.10.0",
+    "intelli-espower-loader": "^0.6.0",
+    "power-assert": "^0.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@youkaiantena.github.com:youkaiantena/sort"
+  },
+  "author": "",
+  "license": "MIT"
+}
