@@ -18,7 +18,10 @@
     "power-assert": "^0.10.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
   },
   "repository": {
     "type": "git",
